@@ -61,15 +61,15 @@ django-admin startproject config .
 Modify `/core/manage.py`
 
 ```python
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.config.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.project.settings")
 ```
 
 Modify `/core/config/settings.py`
 
 ```python
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
-ROOT_URLCONF = "core.config.urls"
-WSGI_APPLICATION = "core.config.wsgi.application"
+ROOT_URLCONF = "core.project.urls"
+WSGI_APPLICATION = "core.project.wsgi.application"
 ```
 
 Add split settings package
