@@ -1,41 +1,75 @@
-# Django #
+# Django
 *.log
 *.pot
 *.pyc
-*.bak
 __pycache__
+db.sqlite3
 media
 
-# Python #
+# Backup files
+*.bak
+
+# Python
 *.py[cod]
 *$py.class
-pip-log.txt
-pip-delete-this-directory.txt
 
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Packaging
+# Distribution / packaging
+*.egg
+*.egg-info/
+*.manifest
+*.spec
 .Python build/
+.eggs/
+.installed.cfg
 develop-eggs/
 dist/
 downloads/
 eggs/
-.eggs/
 lib/
 lib64/
 parts/
 sdist/
 var/
 wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-*.manifest
-*.spec
+
+# Installer logs
+pip-delete-this-directory.txt
+pip-log.txt
+
+# Unit test / coverage reports
+*.cover
+.cache
+.coverage
+.coverage.*
+.hypothesis/
+.pytest_cache/
+.tox/
+coverage.xml
+htmlcov/
+nosetests.xml
+
+# pyenv
+.python-version
+
+# pytest
+.pytest_cache
+
+# Environments
+/local
+/.env
+.venv
+ENV/
+env.bak/
+env/
+venv
+venv.bak/
+venv/
+
+# Misc
+.mypy_cache
+/staticfiles
+
+# IDEs
+.DS_Store
+.idea
+.vscode

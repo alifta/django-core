@@ -53,7 +53,7 @@ Install required packages
 poetry install
 ```
 
-Create `/core`` folder in project folder and set up the Django main folder in the `/core` 
+Create `/core`` folder in project folder and set up the Django main folder in the `/core`
 
 ```shell
 django-admin startproject config .
@@ -81,4 +81,15 @@ Copy developer settings
 ```shell
 mkdir -p local
 cp core/config/settings/templates/settings.dev.py ./local/settings.dev.py
+```
+
+Add two development packages
+```shell
+poetry add -D flake8
+poetry add -D pre-commit
+poetry run pre-commit sample-config
+poetry run pre-commit install
+poetry run pre-commit run --all-files
+poetry run pre-commit uninstall
+poetry run pre-commit install
 ```
