@@ -93,3 +93,5 @@ poetry run pre-commit run --all-files
 poetry run pre-commit uninstall
 poetry run pre-commit install
 ```
+
+Modify Makefile to have pre-commit commands
