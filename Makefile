@@ -12,19 +12,24 @@ lint:
 
 .PHONY: migrate
 migrate:
-	poetry run python -m core.manage migrate
+	poetry run python -m tutorial.manage migrate
 
 .PHONY: migrations
 migrations:
-	poetry run python -m core.manage makemigrations
+	poetry run python -m tutorial.manage makemigrations
 
 .PHONY: runserver
 runserver:
-	poetry run python -m core.manage runserver
+	poetry run python -m tutorial.manage runserver
 
 .PHONY: superuser
 superuser:
-	poetry run python -m core.manage createsuperuser
+	poetry run python -m tutorial.manage createsuperuser
+
+.PHONY: up-dependencies-only
+up-dependencies-only:
+	test -f .env || touch .env
+	docker-compose -f docker-compose.dev.yml up --force-recreate db
 
 .PHONY: update
 update: install migrate install-pre-commit;

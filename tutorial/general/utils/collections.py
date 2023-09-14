@@ -1,5 +1,5 @@
 def deep_update(base_dict, update_with):
-    # Iterate over each items in the new dict
+    # Iterate over each item in the new dict
     for key, value in update_with.items():
         # If the value is a dict
         if isinstance(value, dict):
