@@ -95,3 +95,9 @@ poetry run pre-commit install
 ```
 
 Modify Makefile to have pre-commit commands
+
+**AWS**
+bucket_name=farrokhtala-backend
+secret_key=AKIATSXJHY4PHDMVYTGH
+jtbdPfXIoQRFfmk5oJEdd7McSisnEtZCHFcb3FNg
+ip = 54.218.28.41
