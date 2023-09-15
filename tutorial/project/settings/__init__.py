@@ -5,6 +5,9 @@ from split_settings.tools import include, optional
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent
 
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 # Name spacing our own custom environment variables
 ENVVAR_SETTINGS_PREFIX = 'TUTORIAL_CORE_SETTINGS_'
 
